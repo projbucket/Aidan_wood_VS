@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 20px;
+}
+
+.container h4 {
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+.container #slider {
+    position: absolute;
+    overflow: hidden;
+}
+
+/* .container #slider-inner {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+    pointer-events: none;
+    overflow: hidden;
+} */
+
+.container #slider-inner {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    position: relative;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.container #slider .card {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.container #slider .card .img {
+    height: 300px;
+    width: auto;
+}
+
+.container #slider .card .title {
+    margin: 10px;
+}
+
+.container #slider .card:hover {
+    border: 1px solid blue;
+}
